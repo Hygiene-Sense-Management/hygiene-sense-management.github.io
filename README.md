@@ -1,1 +1,7 @@
-# hagleitner.github.io
+---
+nav_exclude: true
+---
+
+## Hagleitner Documentation
+
+This is the landing page of [Hagleitner documentation](docs.hagleitner.com).
