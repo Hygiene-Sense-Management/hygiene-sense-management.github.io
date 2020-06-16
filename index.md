@@ -11,7 +11,8 @@ nav_order: 1
 
 - [Base-Types](https://hagleitner.github.io/BaseTypes/documentation)
 
-- [Catalog Service](https://hagleitner.github.io/CatalogService-UserManual/)
+- Catalog Service
+    - [User Manual](https://hagleitner.github.io/CatalogService-UserManual/)
 
 - [Software Development Standards](https://hagleitner.github.io/SoftwareDevelopmentStandards/)
 
