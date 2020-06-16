@@ -7,11 +7,11 @@ nav_order: 1
 
 ### Docs Directory [Beta]
 
-- [Multi-Language](https://hagleitner.github.io/MultiLanguage/documentation)
+- [Software Development Standards](https://hagleitner.github.io/SoftwareDevelopmentStandards/)
 
 - [Base-Types](https://hagleitner.github.io/BaseTypes/documentation)
 
+- [Multi-Language](https://hagleitner.github.io/MultiLanguage/documentation)
+
 - Catalog Service
     - [User Manual](https://hagleitner.github.io/CatalogService-UserManual/)
-
-- [Software Development Standards](https://hagleitner.github.io/SoftwareDevelopmentStandards/)
