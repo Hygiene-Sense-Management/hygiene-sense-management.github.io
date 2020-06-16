@@ -15,5 +15,3 @@ nav_order: 1
     - [User Manual](https://hagleitner.github.io/CatalogService-UserManual/)
 
 - [Software Development Standards](https://hagleitner.github.io/SoftwareDevelopmentStandards/)
-
-- more documentation will be added soon
