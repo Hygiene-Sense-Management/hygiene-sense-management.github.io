@@ -7,7 +7,7 @@ nav_order: 1
 
 ### Docs Directory [Beta]
 
-- [Multi-Language](https://hagleitner.github.io/MultiLanguage/Documentation)
+- [Multi-Language](https://hagleitner.github.io/MultiLanguage/documentation)
 
 - [Base-Types](https://hagleitner.github.io/BaseTypes/documentation)
 
