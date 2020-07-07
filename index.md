@@ -13,5 +13,7 @@ nav_order: 1
 
 - [Multi-Language](https://hagleitner.github.io/MultiLanguage/documentation)
 
+- [Data-Analysis-Service Query Language](https://docs.hagleitner.com/DataAnalysisService-QueryLanguage/documentation/)
+
 - Catalog Service
     - [User Manual](https://hagleitner.github.io/CatalogService-UserManual/)
