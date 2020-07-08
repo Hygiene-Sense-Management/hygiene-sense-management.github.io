@@ -4,4 +4,4 @@ nav_exclude: true
 
 ## Hagleitner Documentation
 
-This is the landing page of [Hagleitner documentation](docs.hagleitner.com).
+This is the landing page of Hagleitner documentation.
