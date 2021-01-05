@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Life cycle state</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "life-cycle-state.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Life cycle state</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="digital-twin-service2.html">Previous</a>&nbsp;
+     <a href="frontends.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Digital twins reflect the physical devices' life cycle state.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:160px; padding:0; border:none"><p class="p_Normal">State</p>
+</th>
+<th style="vertical-align:top; width:515px; padding:0; border:none"><p class="p_Normal">Description</p>
+</th>
+<th style="vertical-align:top; width:346px; padding:0; border:none"><p class="p_Normal">Can be transitioned to</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:160px; padding:0; border:none"><p class="p_Normal">Inactive</p>
+</td>
+<td style="vertical-align:top; width:515px; padding:0; border:none"><p class="p_Normal">The device is not assigned to a location in the Client Service. This is also the initial state of devices after production.</p>
+</td>
+<td style="vertical-align:top; width:346px; padding:0; border:none"><p class="p_Normal">Active</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:160px; padding:0; border:none"><p class="p_Normal">Active</p>
+</td>
+<td style="vertical-align:top; width:515px; padding:0; border:none"><p class="p_Normal">Device is in operation i.e. is assigned to a location in the Client Service</p>
+</td>
+<td style="vertical-align:top; width:346px; padding:0; border:none"><p class="p_Normal">Inactive, Hibernating, Decommissioned</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:160px; padding:0; border:none"><p class="p_Normal">Hibernating</p>
+</td>
+<td style="vertical-align:top; width:515px; padding:0; border:none"><p class="p_Normal">Device has been returned to Hagleitner for repair or maintenance</p>
+</td>
+<td style="vertical-align:top; width:346px; padding:0; border:none"><p class="p_Normal">Inactive</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:160px; padding:0; border:none"><p class="p_Normal">Decommissioned</p>
+</td>
+<td style="vertical-align:top; width:515px; padding:0; border:none"><p class="p_Normal">Device has been marked as destroyed by the HsM system, devices cannot be installed any more</p>
+</td>
+<td style="vertical-align:top; width:346px; padding:0; border:none"><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

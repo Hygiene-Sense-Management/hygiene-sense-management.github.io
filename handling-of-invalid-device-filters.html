@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Handling of invalid device filters</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "handling-of-invalid-device-filters.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Handling of invalid device filters</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="device-filter.html">Previous</a>&nbsp;
+     <a href="validating-device-filters.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Device filters may be invalid due to various reasons (see below).The Client Service will handle invalid device filters gracefully, i.e. the execution of the filter will succeed even for invalid filters, in that case the result of the execution might however not be exactly what the user intended.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Handling of incomplete expression tree</span></h1>
+<p class="p_Normal">Incomplete expression trees are handled by the Client Service by applying following checks and corrections (in the order as listed below)</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Missing leave nodes beneath a logical expression node: If a logical expression node does not have any children, the client service will remove this node.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Missing root node: If the device filter does not have a root node, the client service will dynamically modify the device filter to an expression with a root AND note and a single <a href="falsification.html" class="topiclink">Falsification</a> term. The result set of such a device filter will therefore always be empty.</p><h1 class="p_Heading1"><span class="f_Heading1">Invalid filter term</span></h1>
+<p class="p_Normal">Each device filter term type defines its own validity constraints. See the individual <a href="device-filter-term-types.html" class="topiclink">device filter term type documentation</a> for more details.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Contradicting terms</span></h1>
+<p class="p_Normal">The combination of terms in a device filter may result in contradictions. This is not checked by the Client Service. If the combination of nodes results in a logical contradiction the result set of devices will therefore always be empty.</p>
+
+</td></tr></table>
+
+</body>
+</html>

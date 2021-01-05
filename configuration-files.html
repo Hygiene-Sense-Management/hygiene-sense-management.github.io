@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Configuration files</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "configuration-files.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Configuration files</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     
+     
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">&quot;Logging&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;NLog&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;IncludeScopes&quot;:&nbsp;false,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ParseMessageTemplates&quot;:&nbsp;true,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;CaptureMessageProperties&quot;:&nbsp;true</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;LogLevel&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;Default&quot;:&nbsp;&quot;Debug&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;Microsoft.Hosting.Lifetime&quot;:&nbsp;&quot;Warning&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;Microsoft.Extensions.Hosting&quot;:&nbsp;&quot;Warning&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">&quot;NLog&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;autoreload&quot;:&nbsp;true,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;internalLogLevel&quot;:&nbsp;&quot;Info&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;internalLogFile&quot;:&nbsp;&quot;%temp%/dtra-internal.log&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;throwConfigExceptions&quot;:&nbsp;true,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;rules&quot;:&nbsp;[</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;name&quot;:&nbsp;&quot;*&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;minLevel&quot;:&nbsp;&quot;Info&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;appendTo&quot;:&nbsp;&quot;file&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;name&quot;:&nbsp;&quot;*&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;minLevel&quot;:&nbsp;&quot;Info&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;appendTo&quot;:&nbsp;&quot;console&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">],</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;targets&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;console&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;type&quot;:&nbsp;&quot;Console&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;layout&quot;:&nbsp;&quot;${longdate}&nbsp;&nbsp;&nbsp;${level:uppercase=true:padding=-5}&nbsp;&nbsp;|&nbsp;${logger:shortName=true:padding=-20}&nbsp;|&nbsp;${message}&nbsp;${exception:format=tostring}&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;file&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;type&quot;:&nbsp;&quot;File&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;layout&quot;:&nbsp;&quot;${longdate}&nbsp;&nbsp;&nbsp;${level:uppercase=true:padding=-5}&nbsp;&nbsp;|&nbsp;${logger:shortName=true:padding=-20}&nbsp;|&nbsp;${message}&nbsp;${exception:format=tostring}&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;fileName&quot;:&nbsp;&quot;C:\\ProgramData\\HsM\\Digital&nbsp;Twin&nbsp;Registration&nbsp;Agent\\Log\\dtra-dev.log&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;maxArchiveFiles&quot;:&nbsp;&quot;4&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;archiveAboveSize&quot;:&nbsp;&quot;10240&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">&quot;DTRA&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ExecutionIntervalSeconds&quot;:&nbsp;3600,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;CriticalDeviceErrorDampingPeriod&quot;:&nbsp;&quot;01:00:00&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;CriticalDeviceErrorDampedLogLevel&quot;:&nbsp;&quot;Information&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ProviderDb&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ConnectionString&quot;:&nbsp;&quot;Data&nbsp;Source=SQLAPP;Initial&nbsp;Catalog=ProviderDB;Integrated&nbsp;Security=True&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ProductTypeCodeBlackList&quot;:&nbsp;[</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2000&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2010&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2011&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2012&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2031&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2032&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2033&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">],</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;DeviceIdBlackList&quot;:&nbsp;[</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;135e0efd-5c29-4c7c-84b9-613861ffdc96&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;f4e0919a-f16b-463d-8cc8-a9b9f35b3418&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ab99e445-fa08-4265-a96f-a84545a89807&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;b78024d1-6b8d-4d9d-bc66-c910c3043a5e&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;2e3d7a9f-a1e2-48f8-8bd0-21be0e21a55a&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;599ae056-3cdc-4a87-b838-ca56ef85a442&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;660299d2-39a6-4710-b255-3284d92faa7b&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;658654af-39e7-4bb1-8635-837cb06d2751&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;5b149c0f-5aaf-4211-bb2b-2cef03ff7689&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;7cb09ee0-96b6-41b1-b1d1-a26ae776e335&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;9d918394-c786-4e3c-9d78-03babeed412b&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;31b887ae-93e5-4517-bebb-11d7152d0efc&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;775fa705-b756-45cd-9513-84e118698b73&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;942cd600-7418-4c68-bbbc-b8c40648a5d3&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;4523bc4a-9b4d-47df-96cd-a5b940044518&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;8152b257-0b93-4479-8e3c-b87564ad58ea&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;28261a3c-6947-461d-8e34-3b434b934ec4&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;42478afc-13e1-49e4-878c-634b548edd34&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;c2af1f46-f549-4cf2-b105-1b28850c54c0&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;f97278b3-eb31-4c81-a528-e963e629ff86&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;Catalog&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;EndpointUri&quot;:&nbsp;&quot;https://catalog.hsm.digital&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;OemCustomerIds&quot;:&nbsp;[</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;bd90db9c-eeac-44ce-ba97-15ff6f08b661&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">],</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;CacheMaxAge&quot;:&nbsp;&quot;04:00:00&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;DigitalTwinService&quot;:&nbsp;{</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;EndpointUri&quot;:&nbsp;&quot;https://api-hsm-digitaltwinservice-dev.azurewebsites.net&quot;,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&quot;ApiKey&quot;:&nbsp;&quot;Bearer&nbsp;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiJlMGU3YjQ3Ny1iZmU3LTRjMTAtYTU0OS0wYzhmMDY1NTNjYjQiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZDQwYjhkZTItMDU0MC00MGY2LWE0NzUtNDlmYmYwOTQ2ODY5L3YyLjAiLCJpYXQiOjE2MDgxMDcyNTEsIm5iZiI6MTYwODEwNzI1MSwiZXhwIjoxNjA4MTExMTUxLCJhaW8iOiJFMlJnWUdoTnpiTlJhbXo2cHZQcXZGSkQzdGRyQUE9PSIsImF6cCI6IjllYzk1Yjg5LTY0ZGItNGRjYy05YzQ1LTQ2MzZkODdkZTEzMCIsImF6cGFjciI6IjEiLCJvaWQiOiIwMDJhZGRlYy0zYmI1LTRlMTAtYmUzMS04NTI5NzE2OThkNzIiLCJyaCI6IjAuQVJFQTRvMEwxRUFGOWtDa2RVbjc4SlJvYVlsYnlaN2JaTXhObkVWR050aDk0VEFSQUFBLiIsInN1YiI6IjAwMmFkZGVjLTNiYjUtNGUxMC1iZTMxLTg1Mjk3MTY5OGQ3MiIsInRpZCI6ImQ0MGI4ZGUyLTA1NDAtNDBmNi1hNDc1LTQ5ZmJmMDk0Njg2OSIsInV0aSI6IjA0M25LQkpPS1VLYU1sZlI4M0VJQUEiLCJ2ZXIiOiIyLjAifQ.qNQvdIMxjMVZPyconmz1Rsf05S4kZzLmcRrO1UG_kiRLWlVdl3lgJSQ7ZcMgwo9g-LgPmTXX_qwNkt534R3GIPLXjfxbyS-K6yUeZ6d6beJOubW8SiAIB2ymI8XHOw-XuKAPwpcmuwBB6xYdGp_S64GOHV0h6O0PSVE04mxk8HOjMb7I0gXY6YQgc9Ydm5zCxfhuf_0UhJjaJQlXEJj1O1XRJw-TLhvxEC597geA1FlmiloTcisBxyXkmucxrYpLxgvAZjgbuo5CHMqv5uxlmLgcNP0eOrw-9hLKdWR0f8_JIR0AxGwK5ymFGvn4d75MFVDPm8XnBQtKyAYnrGUKdg&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">}</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

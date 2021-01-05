@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Environment variable DTRA_CONFIG_DIR</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "environment-variable-dtra_conf.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Environment variable DTRA_CONFIG_DIR</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     
+     
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">The Windows System Environment Variable DTRA_CONFIG_DIR defines the directory where configuration files are expected and where the Digital Twin Registration Agent will create subfolders for storing data. Note that the environment variable must be a System environment variable.</p>
+<p class="p_Normal">The DTRA_CONFIG_DIR variable should point to a local directory and that directory should be included in your backup.You can use the Windows shell to set the environment variable. Example:</p>
+<p class="p_InlineCode"><span class="f_InlineCode">setx /M DTRA_CONFIG_DIR &quot;D:Data\Hsm\Digital Twin Registration Agent&quot;</span></p>
+<p class="p_Normal">If this system environment variable is not set the Digital Twin Registration Agent will not start, also if the Digital Twin Registration Agent does not find a configuration file that fits the Environment setting</p>
+
+</td></tr></table>
+
+</body>
+</html>

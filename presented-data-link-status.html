@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Presented data link status</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "presented-data-link-status.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Presented data link status</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="data-link-monitoring-protocol.html">Previous</a>&nbsp;
+     <a href="non-gateway-devices.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<h1 class="p_Heading1" style="line-height: 2.33; background: #ffffff; margin: 26px 0 0 0;">Non gateway de</h1>
+<h1 class="p_Heading1" style="line-height: 2.33; background: #ffffff; margin: 26px 0 0 0;"><a id="non-gateway-devices" class="hmanchor"></a></h1>
+<p class="p_Normal"> The data link between a non-gateway device and the backend can be in one of the following states:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Not connected via stationary gateway: Non-gateway device was never connected via stationary gateway, backend decided that no stationary gateway connection is expected, some user defined that no stationary gateway connection is detected.</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Online: The data-link between the non-gateway device and the gateway is established and the data link between this stationary gateway and the HsM backend system is established. Data sent by the non-gateway device will be immediately delivered to the HsM backend systems, data sent by the HsM backend systems &nbsp;will be immediately delivered to the non-gateway devices.</p><p style="text-indent: -13px; line-height: 2.3; margin: 4px 0 0 40px;"><a id="2a1e4b1d-8133-4e82-8bec-6a1e1fb000ba" class="hmanchor"></a></p>
+<p style="text-indent: 0; line-height: 2.3; padding-left: -7px; margin: 4px 0 0 27px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-weight: bold; color: #172b4d;">Offline</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">: </span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d; background-color: #fff0b3;">The non-gateway has never been connected to the HsM backend systems via a stationary gateway</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;"> or a previously established data link has been broken for more than 24 h.</span></p><h3 style="line-height: 2.3; background: #ffffff; margin: 32px 0 0 0;"><a id="backend-decided-that-no-stationary-gateway-connection-is-expected" class="hmanchor"></a></h3>
+<p style="text-indent: 0; line-height: 2.3; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';color:#172B4D;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">Location of device is changed (from room up)</span></p><p style="text-indent: 0; line-height: 2.3; padding-left: 13px; margin: 4px 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';color:#172B4D;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">Assigned to a different customer</span></p><p style="text-indent: 0; line-height: 2.3; padding-left: 13px; margin: 4px 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';color:#172B4D;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">when stationary-gateway is de-installed: All devices that where last registered with this stationary-gatway will be set to </span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-style: italic; color: #172b4d;">not connected via stationary gateway.</span></p><h1 class="p_Heading1" style="line-height: 2.33; background: #ffffff; margin: 26px 0 0 0;"><a id="gateway-devices" class="hmanchor"></a></h1>
+<p class="p_Normal" style="line-height: 2.3; background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">In HsM stationary gateways are also handled as HsM devices therefore those gateways also have a data-link status.</span></p>
+<p style="text-indent: 0; line-height: 2.3; padding-left: 20px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: 'Segoe UI';color:#172B4D;display:inline-block;width:20px;margin-left:-20px">1.</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-weight: bold; color: #172b4d;">Never connected to backend:</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;"> Gateway has never had a connection to the backend system (e.g. network configuration was not made correctly)</span></p><p style="text-indent: 0; line-height: 2.3; padding-left: 20px; margin: 4px 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: 'Segoe UI';color:#172B4D;display:inline-block;width:20px;margin-left:-20px">2.</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-weight: bold; color: #172b4d;">Online</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">: The data-link between the stationary gateway and the HsM backend system is established. Data sent by the stationary-gateway device will be immediately delivered to the HsM backend systems, data sent by the HsM backend systems will be immediately delivered to the stationary-gateway device.</span></p><p style="text-indent: 0; line-height: 2.3; padding-left: 20px; margin: 4px 0 0 27px;"><span class="f_Normal" style="font-size:16px; font-family: 'Segoe UI';color:#172B4D;display:inline-block;width:20px;margin-left:-20px">3.</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-weight: bold; color: #172b4d;">Offline</span><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;">: A previously established data link has been broken.</span></p><p class="p_Normal" style="line-height: 2.3; background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 16px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; color: #172b4d;"> </span><span style="background-color: #ffffff;">Enter topic text here.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

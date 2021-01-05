@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Resource compositions</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "display-groups2.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Resource compositions</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="display-groups.html">Previous</a>&nbsp;
+     <a href="problem-types.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">While display groups defined with a firmware variant version give clients a hint how to visualize the set of resource instances within that firmware variant version, resource compositions are used to a) define equivalent resource instances across device types, firmware variants and versions and to b) define subsets of resource instances with special meaning across device types.</p>
+<p class="p_Normal">Resource compositions are global catalog elements that provide a set of named composition elements. A resource instances of a firmware variant version can be linked to one composition element within a resource composition, but can be linked to any number of composition elements as long as these elements belong to different resource compositions.</p>
+<p class="p_Normal">Example 1:</p>
+<p class="p_Normal">A resource composition named “The Main 3” may be used to define a structure that holds the main three resource instances of firmware variant versions within specific device types. This resource composition would define three elements named 1st, 2nd and 3rd. Now within a firmware variant version one resource instance can be mapped to the element 1st, one to element 2nd one to element 3rd.</p>
+<p class="p_Normal">A client software may now use this information to render the 3 most important resource instance for a specific firmware variant version.</p>
+<p class="p_Normal">Example 2:</p>
+<p class="p_Normal">A resource composition named “Fill state” may be used to define the resource instance that matches the meaning “Fill state” across different firmware variant versions. This resource composition would only have one element named Fill state. Within each firmware variant version one (and only one) resource instance can now be mapped to the fill stat element.</p>
+<p class="p_Normal">Client software can now use this information to render the fill state for different device types.</p>
+
+</td></tr></table>
+
+</body>
+</html>

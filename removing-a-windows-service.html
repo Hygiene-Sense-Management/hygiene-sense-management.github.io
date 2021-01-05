@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Removing a Windows Service</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "removing-a-windows-service.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Removing a Windows Service</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     
+     
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<h1 class="p_Heading1"><span class="f_Heading1">Using PowerShell</span></h1>
+<p class="p_Normal">Note you need to run PowerShell with administrative privileges to modify Windows Services.</p>
+<p class="p_Normal">Removing a Windows Service for the Digital Twin Registration Agent can be done with the <span class="f_InlineCode">Remove-Service</span> PowerShell cmdlet. For full documentation of this cmdlet type <span class="f_InlineCode">Get-Help Remove-Service -Online</span> &nbsp;in PowerShell. Note that this cmdlet was introduced with PowerShell 6.0 and is not available in previous versions. </p>
+<p class="p_Normal">General Syntax of the Remove-Service cmdlet:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">Remove-Service&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">[-Name]&nbsp;&lt;String&gt;&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">[-WhatIf]&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">[-Confirm]&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span style="width:26px;display:inline-block">&nbsp;</span><span class="f_CodeExample">[&lt;CommonParameters&gt;]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The -Name parameter must match the -Name parameter used when <a href="run-as-windows-service.html" class="topiclink">creating</a> the Windows Service. Example</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">Remove-Service&nbsp;-Name&nbsp;DTRA_Production</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Using sc.exe</span></h1>
+<p class="p_Normal">As alternative to the PowerShell cmdlet you can use the <span class="f_InlineCode">sc.exe</span> tool</p>
+<p class="p_Normal">General Syntax of the Remove-Service cmdlet:</p>
+<p class="p_InlineCode"><span class="f_InlineCode">sc.exe [&lt;servername&gt;] delete [&lt;servicename&gt;]</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

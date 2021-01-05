@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Logging</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "logging.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Logging</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     
+     
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">For monitoring the Digital Twin Registration Agent the program logs via the nlog framework and therefore allows for versatile routing of log messages. </p>
+<p class="p_Normal">Log messages have associated log levels that can be used to route log message. The Digital Twin Registration Agent uses log levels in following way:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:84px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Log level</p>
+</th>
+<th style="vertical-align:top; width:638px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Fatal</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Exceptions that prevent the Digital Twin Registration Agent from operating. Io Exceptions, Network down etc. - must be actively monitored.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Error</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Exceptions that hinder registration of devices. Must be actively monitored</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Warning</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Require Weekly checks by administrators</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Info</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Detailed Protocol of operation. Can be used by administrators to debug behavior</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Debug</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Only for developer debugging</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:84px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Trace</p>
+</td>
+<td style="vertical-align:top; width:638px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Only for developer debugging</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

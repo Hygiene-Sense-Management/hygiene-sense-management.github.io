@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Enumerating resource instances</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "enumerating-resource-instances.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Enumerating resource instances</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="wording.html">Previous</a>&nbsp;
+     <a href="delivering-device-types-via-th.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Since compound device types can contain multiple compound member device types, they can also contain multiple firmware types. Therefore the possibly available resource instances have to be enumerated.</p>
+<p class="p_Normal">The available resource instances for a given device type are built as follows:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Search for all firmware component types that are part of the given device type</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Search for all device type placeholders within the given device type, and search for all firmware component types within that device</p><p class="p_Normal">A result could look like in the example shown below.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Device type 1:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Firmware type A</p><p class="p_Normal" style="text-indent: 0; padding-left: 26px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Courier New';display:inline-block;width:13px;margin-left:-13px">o</span>Resource A.1</p><p class="p_Normal" style="text-indent: 0; padding-left: 26px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Courier New';display:inline-block;width:13px;margin-left:-13px">o</span>Resource A.2</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Device type placeholder 1</p><p class="p_Normal" style="text-indent: 0; padding-left: 26px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Courier New';display:inline-block;width:13px;margin-left:-13px">o</span>Firmware type B</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Resource B.1</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Resource B.2</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Resource B.3</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Device type placeholder 2</p><p class="p_Normal" style="text-indent: 0; padding-left: 26px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Courier New';display:inline-block;width:13px;margin-left:-13px">o</span>Firmware type C</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Resource C.1</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Resource C.2</p><p class="p_Normal">Possibly available resource instances:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>A.1, A.2</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>B.1, B.2, B.3</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>C.1, C.2</p>
+</td></tr></table>
+
+</body>
+</html>

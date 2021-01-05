@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Latest Resource instance value</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "resource-instance-value2.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Latest Resource instance value</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="location-tree-filter.html">Previous</a>&nbsp;
+     <a href="transmission-mode.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Filters devices by their latest reported resource instance values. </p>
+<p class="p_Normal">A resource instance is specified either by device type id, resource id and resource instance number or by resource instance equivalent and device types.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Restrictions</span></h1>
+<p class="p_Normal">If a resource instance with a visibility level not available to the executing user is specified no device will pass the filter.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Settings</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Setting</p>
+</th>
+<th style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Resource specification</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">This setting defines the queried resource instance. The actually queried resource instance can be given either as specific resource for a specific device type or as a resource instance equivalent for a set of selected device types. Possible settings are therefore:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Specific resource instance</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Resource instance equivalent</p></td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; width:509px; padding:0; border:none"><p class="p_Normal">Settings for Resource specification = <span style="font-style: italic;">Resource instance equivalent</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal" style="margin: 0 0 6px 13px;">Resource instance equivalent</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">A resource instance equivalent (as specified by the Catalog Service)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal" style="margin: 0 0 6px 13px;">Device types</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">A list of device types that shall be included in the filter. Device types that do not have a resource instance equivalent</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; width:509px; padding:0; border:none"><p class="p_Normal">Settings for Resource specification = Specific resource instance</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal" style="margin: 0 0 6px 13px;">Device type</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">The device type included in the filter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal" style="margin: 0 0 6px 13px;">Resource type</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">The resource type </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal" style="margin: 0 0 6px 13px;">Resource instance no</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">The resource instance number.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="p_Heading2"><span class="f_Heading2">Comparison settings</span></h2>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Setting</p>
+</th>
+<th style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Comparison operator</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">Depending on the data type used by the selected resource type comparison operators are allowed:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Numeric with single comparison value: &gt;, &lt;, &gt;=, &lt;=, =, !=</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Numeric with two comparison values: Between (<span class="f_InlineCode">&gt;= Comparison value 1</span> and <span class="f_InlineCode">&lt;= Comparison Value 2</span>)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>String: Starts with, Equals</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Comparison value 1</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">The comparison value used for operators with a single comparison value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:none"><p class="p_Normal">Comparison value 2</p>
+</td>
+<td style="vertical-align:top; width:557px; padding:0; border:none"><p class="p_Normal">The 2nd comparison value used for operators with two comparison values</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

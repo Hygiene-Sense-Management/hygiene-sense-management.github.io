@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>HsMDevice QR Codes</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "device-qr-codes.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">HsMDevice QR Codes</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="v3.html">Previous</a>&nbsp;
+     <a href="article-numbers.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Some HsM device components have stickers on them with a <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank" class="weblink">QR code</a> that carries information about device the component belongs to (at the time of production) or its components.</p>
+<p class="p_Normal">Usually the contents of the QR code are also printed as human readable text next to the QR code.</p>
+<p class="p_Normal">The contents of the QR Code is a UTF-8 encoded string without <span style="font-style: italic;">Byte order Mark</span> that carries several data fields. </p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:105px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Data field</p>
+</th>
+<th style="vertical-align:top; width:175px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Location in string</p>
+</th>
+<th style="vertical-align:top; width:489px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Data type</p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters up to the first hyphen (U+002D, 0x2D)</p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Version</p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters after the first hyphen to the second hyphen (U+002D, 0x2D)</p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Product type code</p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters after the second hyphen (U+002D, 0x2D up to the third hyphen.</p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">The product type code of the device type this QR code is on.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Article number</p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters after the third hyphen (U+002D, 0x2D up to the first new line (<span style="font-size: 15px; color: #242729; background-color: #ffffff;">U+000A, 0x0A</span>)</p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal"><a href="serial-numbers.html" class="topiclink">Serial number</a></p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters between the first and the second new line (<span style="font-size: 15px; color: #242729; background-color: #ffffff;">U+000A, 0x0A</span>)</p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">The serial number of the device or one of the components of the device</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Network id</p>
+</td>
+<td style="vertical-align:top; width:175px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">All characters after the second new line (<span style="font-size: 15px; color: #242729; background-color: #ffffff;">U+000A, 0x0A</span>) </p>
+</td>
+<td style="vertical-align:top; width:489px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Encodes a network identity e.g. the MAC address or the blUUID of a component</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><a id="fig_15d7fe" class="hmanchor"></a>Table 1: Contents of the HsM Device QR code</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Example</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 6px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:165px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">QR Code</p>
+</th>
+<th style="vertical-align:top; width:163px; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">String content</p>
+</th>
+<th style="vertical-align:top; background-color:#DCDCDC; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Decoded information</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:165px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal"><img alt="QR Code Sample 01" width="164" height="164" style="margin:0;width:164px;height:164px;border:none" src="hmfile_hash_3bfb4312.png"/></p>
+</td>
+<td style="vertical-align:top; width:163px; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">50-02-2008-444433332222</p>
+<p class="p_Normal">201105TTT0008</p>
+<p class="p_Normal">bd29a08243dcaff4</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #c0c0c0;"><p class="p_Normal">Data type: <span class="f_InlineCode">50</span></p>
+<p class="p_Normal">Version: <span class="f_InlineCode">02</span></p>
+<p class="p_Normal">Product type code: <span class="f_InlineCode">2008</span></p>
+<p class="p_Normal">Serial number: <span class="f_InlineCode">201105TTT0008</span></p>
+<p class="p_Normal">Network id: <span class="f_InlineCode">bd29a08243dcaff4</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><a id="fig_29f12d" class="hmanchor"></a>Table 2: Examples of HsM Device QR Codes</p>
+
+</td></tr></table>
+
+</body>
+</html>

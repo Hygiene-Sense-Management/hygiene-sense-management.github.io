@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>HsM OEM Customers</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "hsm-oem-customers.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">HsM OEM Customers</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="introduction.html">Top</a>&nbsp;
+     <a href="authorization.html">Previous</a>&nbsp;
+     <a href="rest-api.html">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Entities in the Catalog Service are mapped to one or more OEM Customers. E.g. a device type is mapped to one or more OEM-Customers.</p>
+<p class="p_Normal">When Accessing the Catalog Service’s admin API all read and write operations will verify if the accessed or modified entity is mapped to an OEM customer that is also in the list of OEM-Customers administrated by the accessing user or client.</p>
+<p class="p_Normal">As the entities managed by the Catalog Service do not contain any business secrets and therefore the Browse API can be accessed anonymously, the Catalog Service’s browse API also does not protect entities with regard to the OEM-Customers they belong to. However for accessing entities through the browse API the user or client must know the entity’s ID, or the OEM-Customer ID.</p>
+
+</td></tr></table>
+
+</body>
+</html>
