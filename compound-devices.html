@@ -34,7 +34,7 @@
     <td style="text-align:right">
      <a href="introduction.html">Top</a>&nbsp;
      <a href="digital-twin-lifecycle-status.html">Previous</a>&nbsp;
-     <a href="developer-documentation.html">Next</a>
+     <a href="extended-properties.html">Next</a>
     </td>
   </tr>
 </table>
@@ -42,11 +42,10 @@
 
 <!-- Placeholder for topic body. -->
 <table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
-<p class="p_Normal">The Digital Twin service supports compound device types in that way that it records the current relationship between devices and also the historical relationships between devices. </p>
-<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Digital Twin Service supports <a href="compound-device-types.html" class="topiclink">compound device types</a>. It records the current relationship between devices and keeps a history of relationships between devices.</p>
 <p class="p_Normal">Terminology:</p>
-<p class="p_Normal">A device that has another device built-in is called a compound device</p>
-<p class="p_Normal">A device that is part of a parent device is called a compound member device</p>
+<p class="p_Normal">A device that has another device built-in is called a <span class="f_Identifier">compound device</span>.</p>
+<p class="p_Normal">A device that is part of a parent device is called a <span class="f_Identifier">compound member device.</span></p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal">Getting the device id from a component id</p>
 <p class="p_Normal">When querying the digital twin service for the device by the identifier of a component this query can be issued either for the component’s device or for the component’s root device.</p>
@@ -58,17 +57,7 @@
 <p class="p_Normal">When evaluating the root device id the digital twin service will first search for the given component id and will check if this component is registered with some device. Then the digital twin service will check if the device of the component is a contained device, if so it will return the id of the compound device, if not the device id is returned.</p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal">Combining devices</p>
-<p class="p_Normal">Compound devices can be either created by the Digital Twin registration agent when the device is first registered or can be created through the HsM Client Service (usually via Xibu App or Web Frontend)</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">The flow for combining devices through one of the frontends would be:</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">Select parent device's combined device type placeholder. E.g. go to the Multifold towel, select the MLE placeholder. As device type placeholders are typed the software knows which types of devices can be mapped to this placeholder.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">Select a device of that type (usually by scanning an identifiable component, or by selecting from a list of devices associated with the same customer)</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">The combinable device will then be mapped to the compound device in the Digital Twin Service, any other relation of the combinable device to a compound device will be removed.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">Changes in the digital Twin Service will be immediately synced to the HsM Client Service.</p>
+<p class="p_Normal">Compound devices are created by instances of the Client Service. I.e. the relationship between a compound device and a compound member device is created by a user through some user interface and then the Client Service will forward this relationship information to the digital twin service.</p>
 
 </td></tr></table>
 
