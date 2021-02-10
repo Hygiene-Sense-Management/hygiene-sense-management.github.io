@@ -137,7 +137,7 @@ var pageName="mainPage";var hmDevice={mobileSleepReload:true,compilehash:(functi
 	</div>
 	<div id="headerbox_wrapper">
 	<div id="headerbox">
-<a id="headerlogo" href="http://www.ec-software.com/" title="EC Software Website" target="_blank"></a>
+<a id="headerlogo" href="https://docs.hsm.digital" title="Hygiene Management" target="_blank"></a>
 <div id="headerwrapper"><h1 class="page_header" id="hm_pageheader">HsM Reference Manual</h1></div>
 
 
@@ -318,7 +318,7 @@ if (!hmFlags.isEWriter) fouc.parentNode.removeChild(fouc);
 Copyright (c) 2015-2017 by Tim Green. All rights reserved. Contact tg@it-authoring.com
 */
 (function(){var b=sessionVariable.getPV("fontSize"),a=document.getElementsByTagName("html")[0];if(b!==null){a.style.fontSize=b+"%"}else{a.style.fontSize=hmDevice.baseFontSize+"%"}})();var moveCheck=null,hmTocLoaded=false,hmTocWidth=0,xMessage=new xMsg("LANDING TOPIC");function initScripts(){hmPopupsObject={};hmFlags.isHmTopic=true;hmFlags.idxLoaded=false;hmFlags.schLoaded=false;hmFlags.searchSession=false;hmFlags.tocClicked=false;hmFlags.layoutTable=false;hmFlags.searchHighlight="";hmFlags.tocInitWidth=0;hmFlags.jumpHighlight=false;hmFlags.hmMainPage="index.html";hmFlags.hmTrackHost="http://www.helpandmanual.com/help/";hmFlags.hmProject="HsM Reference Manual";hmFlags.hmDefaultPage="index.html";hmFlags.hmCurrentPage="queue.html";hmFlags.hmTOC="hmcontent.html";hmFlags.hmSearchPage="hmftsearch.html";hmFlags.hmIndexPage="hmkwindex.html";hmFlags.thisTopic="queue.html";hmFlags.lastTopic="index.html";hmFlags.isEWriter=false;hmFlags.topicExt=".html";hmFlags.defaultExt=".html";hmFlags.projName="HsM";hmFlags.tDescription=document.querySelector("meta[name='description']").getAttribute("content");hmFlags.tKeywords="";hmFlags.hdFormat=false;hmFlags.contextID=(function(){var f;if(/^https??:\/\//im.test(document.location)){f=/contextid=\d*/.exec(window.location.search.substring(1))}else{f=/contextid=\d*/.exec(window.location.hash.substring(1))}return f!=null?f[0]:false})();function e(f){$.getScript(a[f],function(g,i,h){if(d<a.length-1){d++;e(d)}else{hmpage.defaulttopic="index.html";hmWebHelp.hmMainPageInit();hmpage.hmDescription=document.querySelector("meta[name='description']").getAttribute("content");hmpage.hmPicture=""===""?"":"./images/";}})}if(document.location.protocol.substr(0,4)!=="http"){window.History={options:{html4Mode:true}}}var d=0;var a=["./js/helpman_settings.js","./js/jquery.scrollTomin.js","./js/jquery.history.js","./js/hm_webhelp.js"];if(hmFlags.contextID){a.unshift("./js/hmcontextids.js")}if(hmDevice.phone){a.push("./js/mobileNav.js")}var c=document.getElementById("jqscript");c.src="./js/jquery.js";var b=setInterval(function(){if(window.jQuery){clearInterval(b);$.ajaxPrefilter("json script",function(g){g.crossDomain=true});if(hmDevice.embedded&&hmDevice.desktop){$("li#toggle_fullscreen").show()}e(0);var f="Queue";switch("topic"){case"project":f="HsM Reference Manual";break;case"project_topic":f="HsM Reference Manual > Queue";break}$("title").text(f)}},100)}if(window.addEventListener){window.addEventListener("load",initScripts,false)}else{if(window.attachEvent){window.attachEvent("onload",initScripts)}else{window.onload=initScripts}};
-helpman_mailrecipient = 'Support Staff <support@ec-software.com>';
+helpman_mailrecipient = 'Support Staff';
 hmGetUrlParams = function() {/*! 
 * Enter code to save URL parameters to session variables inside the if clause below.
 * This will be executed when your WebHelp is first opened and the session variables
